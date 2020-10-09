@@ -30,7 +30,7 @@ export default function Features({selected, features, updateFeature}) {
         );
         })
       return (
-       <Parts featureHash={featureHash} feature={feature} options={options} />
+       <Parts key={featureHash} feature={feature} options={options} />
       );
     });
 }
